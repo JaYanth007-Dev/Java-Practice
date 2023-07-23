@@ -1,28 +1,3 @@
-
-
-class A {
-    public A() {
-        System.out.println("From A constructor");
-    }
-
-    public A(int n) {
-        System.out.println("From A Integer");
-    }
-}
-
-class B extends A {
-    private int numbers = 10;
-    public B() {
-        super(0);
-        System.out.println("from B Constructor");
-    }
-
-    public void setNumber(int newValue){
-        numbers = newValue;
-        System.out.println(numbers);
-    }
-}
-
 class Main {
     public static void main(String args[]) {
         int nums[][] = new int[3][4];
@@ -39,14 +14,18 @@ class Main {
             System.out.println("");
         }
 
-
+        // Calc class
         Calc obj = new Calc();
         System.out.println("Sum of two numbers is:"+obj.add(5, 10) );
         Calc.show();
         
-        B objB = new B();
+        // inhritance Example
+        inheritance objB = new inheritance();
         objB.setNumber(30);
+       System.out.println( objB.addition(2, 3));
 
+
+        
 
     }
 }
