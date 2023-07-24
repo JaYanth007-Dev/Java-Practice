@@ -15,16 +15,22 @@ class Main {
         }
 
         // Calc class
+        System.out.println("Calc Class");
         Calc obj = new Calc();
         System.out.println("Sum of two numbers is:"+obj.add(5, 10) );
         Calc.show();
         
         // inhritance Example
+        System.out.println("Inheritance Example");
         inheritance objB = new inheritance();
         objB.setNumber(30);
        System.out.println( objB.addition(2, 3));
 
-
+       // Method overriding
+       System.out.println("Method overriding Example");
+       MethodOverriding obj2 = new MethodOverriding();
+       int res = obj2.adding(10, 20);
+       System.out.println(res);
         
 
     }
