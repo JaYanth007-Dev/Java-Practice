@@ -1,4 +1,6 @@
 class Main {
+    private static int setAdd;
+
     public static void main(String args[]) {
         int nums[][] = new int[3][4];
         for (int i = 0; i < nums.length;i++) {
@@ -20,7 +22,7 @@ class Main {
         System.out.println("Sum of two numbers is:"+obj.add(5, 10) );
         Calc.show();
         
-        // inhritance Example
+        // inheritance Example
         System.out.println("Inheritance Example");
         inheritance objB = new inheritance();
         objB.setNumber(30);
@@ -32,6 +34,11 @@ class Main {
        int res = obj2.adding(10, 20);
        System.out.println(res);
         
+       //   MultiLevel inheritance
+    System.out.println("\nMulti-level Inheritance example:");
+    MultilevelInheritance objC = new MultilevelInheritance();
+    setAdd = objC.setAdd(20);
+    objC.show();
 
     }
 }
