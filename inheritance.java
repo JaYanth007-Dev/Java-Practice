@@ -5,6 +5,7 @@ class A {
 
     public A(int n) {
         System.out.println("From A Integer");
+        System.out.println("From A parameterised constructor Integer");
     }
 
     public int addition(int a, int b) {
