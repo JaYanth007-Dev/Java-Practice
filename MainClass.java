@@ -15,6 +15,7 @@ class Main {
             }
             System.out.println("");
         }
+        System.out.println(setAdd);
 
         // Calc class
         System.out.println("Calc Class");
