@@ -41,5 +41,29 @@ class Main {
     setAdd = objC.setAdd(20);
     objC.show();
 
+
+    // interface example
+    // ? See on interface File
+
+        
+        
+    // Inner Classes Example
+    InnerClasses dis = new InnerClasses();
+    dis.display();
+    InnerClasses.B innerObj = dis.new B();
+    innerObj.methodOne();
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
