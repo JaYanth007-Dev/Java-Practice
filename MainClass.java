@@ -52,8 +52,19 @@ class Main {
     dis.display();
     InnerClasses.B innerObj = dis.new B();
     innerObj.methodOne();
+        
 
 
+    // Enum Example
+    System.out.println("Enum Example");
+    enum Status {
+    Running, Pending, Failed, Success;
+    }
+
+    Status[] s = Status.values();
+    for (Status ss : s) {
+        System.out.println(ss);
+    }
 
 
 
