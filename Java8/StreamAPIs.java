@@ -14,5 +14,10 @@ public class StreamAPIs {
         List<String> values = list2.stream().map(String::toUpperCase).filter(item -> item.startsWith("A"))
                 .collect(Collectors.toList());
         System.out.println(values);
+
+          // anyMatch: Check if any name starts with 'S'
+        boolean anyStartWithS = list2.stream().anyMatch(
+            name -> name.startsWith("S")
+        );
     }
 }
