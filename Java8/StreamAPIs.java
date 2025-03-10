@@ -24,5 +24,10 @@ public class StreamAPIs {
         Optional<String> firstName = list2.stream().findFirst();
         System.out.println("\nfindFirst:");
         // ---firstName.ifPresent(System.out::println);
+
+          // allMatch: Check if all names start with 'S'
+        boolean allStartWithS = list2.stream().allMatch(
+            name -> name.startsWith("S")
+        );
     }
 }
