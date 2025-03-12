@@ -29,5 +29,13 @@ public class StreamAPIs {
         boolean allStartWithS = list2.stream().allMatch(
             name -> name.startsWith("S")
         );
+
+         // reduce: Concatenate all names into a single string
+        String concatenatedNames = names.stream().reduce(
+            "",
+            (partialString, element) -> partialString + " " + element
+        );
+        System.out.println("\nreduce (concatenated names):");
+        System.out.println(concatenatedNames.trim());
     }
 }
