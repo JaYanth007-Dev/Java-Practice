@@ -37,5 +37,9 @@ public class StreamAPIs {
         );
         System.out.println("\nreduce (concatenated names):");
         System.out.println(concatenatedNames.trim());
+
+        long count = names.stream().count();
+        System.out.println("\ncount:");
+        System.out.println(count);
     }
 }
