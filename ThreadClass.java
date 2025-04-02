@@ -33,6 +33,21 @@ class MyThread2 extends Thread {
     }
 }
 
+class MyThread3 extends Thread {
+
+    // Method inside MyThread2
+    // run() method which is called
+    // as soon as thread is started
+    public void run() {
+
+        // run() method which is called as soon as thread is
+        // started
+
+        // Print statement when the thread is called
+        System.out.println("Thread3 is running");
+    }
+}
+
 // Class 3
 // Main Class
 class ThreadClass {
@@ -43,6 +58,8 @@ class ThreadClass {
         // Creating a thread object of our thread class
         MyThread1 obj1 = new MyThread1();
         MyThread2 obj2 = new MyThread2();
+        
+        MyThread3 obj3 = new MyThread3();
 
         // Getting the threads to the run state
 
@@ -55,5 +72,6 @@ class ThreadClass {
         // run as start() method will look for run() and
         // execute it
         obj2.start();
+        obj3.start();
     }
 }
