@@ -13,7 +13,9 @@ public class StreamAPIs {
         // By giving method reference implementing the method in functional interface
         list1.stream().forEach(obj::printing);
 
+        // Creating list
         List<String> list2 = Arrays.asList("Apple", "ant", "Cherry", "Cat", "Dog", "Aeroplane");
+        // Converting into the uppercase and filtering the words that starts with 'A'
         List<String> values = list2.stream().map(String::toUpperCase).filter(item -> item.startsWith("A"))
                 .collect(Collectors.toList());
         System.out.println(values);
