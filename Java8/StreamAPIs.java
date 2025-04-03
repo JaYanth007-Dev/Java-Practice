@@ -43,6 +43,7 @@ public class StreamAPIs {
         System.out.println("\nreduce (concatenated names):");
         System.out.println(concatenatedNames.trim());
 
+        // To print count of items present in the list
         long count = names.stream().count();
         System.out.println("\ncount:");
         System.out.println(count);
