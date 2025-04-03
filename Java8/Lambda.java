@@ -41,7 +41,7 @@ public class Geeks {
             -> System.out.println(
                 "This is a zero-parameter lambda expression!");
 
-        // Invoke the method
+        // Invoke the method in functional interface
         zeroParamLambda.display();
     }
 }
