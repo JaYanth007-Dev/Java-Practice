@@ -6,8 +6,11 @@ import java.util.stream.Collectors;
 
 public class StreamAPIs {
     public static void main(String[] args) {
+        // List creation
         List<String> list1 = Arrays.asList("Apple", "Banana", "Cherry", "Date", "Elderberry");
+        // creating implementation
         StreamAPIInterface obj = (name) -> System.out.println(name);
+        // By giving method reference implementing the method in functional interface
         list1.stream().forEach(obj::printing);
 
         List<String> list2 = Arrays.asList("Apple", "ant", "Cherry", "Cat", "Dog", "Aeroplane");
