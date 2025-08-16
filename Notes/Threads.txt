@@ -1,1 +1,40 @@
+Java Threads:
+	-Thread : It is basically a lightweight unit of excecution with in a program.
+		Formal Definition
+			A thread in Java is:
 
+			A path of execution in a program.
+
+			Part of a process (your running Java application).
+
+			Capable of running independently from other threads.
+
+			Managed by the Java Virtual Machine (JVM) and the underlying OS.
+	-Whenever application starts running ,a user thread is created to run the main method () so it is called the main thread.
+	-If all user threads are completed its execution the program will stop execution and it will check for the demon thread had execute its task or not .
+	  The prioroty for the user threads is high ,the main thread is an User thread.
+	*- Sleep method - it will not release the lock
+	*- wait method - it will release the lock .If it have multiple lock objects then on which object the wait() method was called it will release the lock only for the particular object
+					it will hold the lock of remaining objects
+	-We can Create a thread is 2 ways
+	 1.Extends Thread class - (Here we are overriding the run method present in main Thread class in our custom class)
+	 2.Implements Runnable Interface -(Here we will pass Runnable instance,that instance will assign to the target variable in the Thread class and that instance have run method we will call that)
+		-Defaultly Thread class implements Runnable interface.
+		-In the Thread class there is a variable called target,it is of type "Runnable".whenever we are initilizing as below
+			Thread t=new Thread(Runnable obj) - here the constructor is assiging this runnable instance to that 'target' variable present in the Thread class 
+
+		
+				✅ Summary Table — Ways using Thread t = new Thread(...)
+
+				Way							Syntax										Preferred?
+				Runnable class				new Thread(new MyRunnable())				✅ Yes
+				Anonymous Runnable			new Thread(new Runnable() {...})			✅ Yes
+				Lambda Runnable				new Thread(() -> {...})						✅ Best for short tasks
+				Anonymous Thread subclass	new Thread() { public void run() {...} }	⚠️ Not preferred
+				
+				
+
+				
+	
+				
+				
