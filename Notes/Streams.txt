@@ -1,1 +1,9 @@
+Streams:
+  In Java, we have two categories of streams:
 
+   1) Stream<T> → A stream of objects (generic reference types, e.g., Stream<String>, Stream<Integer>).
+    
+   2) Primitive Streams → Special streams for primitives, because boxing/unboxing of wrapper objects (Integer, Double) is expensive:
+      IntStream → for int  
+      LongStream → for long
+      DoubleStream → for double
