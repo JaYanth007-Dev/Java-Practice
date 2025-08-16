@@ -1,0 +1,55 @@
+Explict conversion -(Casting)
+ex:	
+	float b=2.9f;
+	int k=(int) b
+	
+Implicit conversion - Type Conversion
+ex: byte b=32;
+	int a=b;
+	
+	
+Operators:
+Arthematic 
+Re
+
+
+Arrays:
+Jagged arrays:The size of the internal array is not unique
+
+Drawbacks:We cant change the size	
+		  elements will be in continues memory location
+		  it will traverse from start to end in case of searching and sroting etc
+		   it we want to increase the size of an array we need to create new array and need to copy the existing one
+		   we cant store multiple types like int,string etc
+		   
+		   
+		
+#String
+String is a class so it will create objects in Heap memory in String constant pool
+-If we try to modify it will again create new constant
+-Using String Buffer and builder we can modify the string
+-By default String Buffer will give the buffer space of 16 chars - ex:StringBuffer j=new StringBuffer("Jay"). It will give the capacity of 16+3=19.
+-String buffer is "Thread safe" builder is not so it is fast
+
+
+:Static variable are store in Method area of JVM - it will store meta information of class.
+-in static methods we can use only static variables we cant use non static variables
+Means - we can't directly access if we want to access we can pass the object in to the method then we can access
+-Static block:-it will call only once when class get loaded even we create many objects it will call only once
+			-it will call first -because whenever we create an object of a class for the first time,the class loader will load that class,at the time only static bloack will call.
+-If you wont create a object for a class that class will not loaded by class loader
+-If we want to load the class without creating an object then - have to use	
+	ex: Class.forName("Mobile") in main method
+	so it will load the class .if we have static block with a print statement ,only that will print not any constructor or any other methods.	
+	
+
+:PSVM -
+-If we remove static in that it will become non static method so we need a object to call non static method
+so excecution will not start in the main method
+
+
+:Inheritance
+- Whenever we create an obj of child class it will call both the child and parent class constructors
+
+
+:
