@@ -31,6 +31,19 @@ Java Threads:
 				Anonymous Runnable			new Thread(new Runnable() {...})			✅ Yes
 				Lambda Runnable				new Thread(() -> {...})						✅ Best for short tasks
 				Anonymous Thread subclass	new Thread() { public void run() {...} }	⚠️ Not preferred
+
+
+	**Synchronization**
+  	-Synchronized block - 
+    If i have two methods push and pop having synchronized block in it with same lock object in both the methods ,
+    -Consider Threads t1,t2,t3 at push method and t4,t5,and pop method  
+    :Consider t2 accquires the lock so now t2 can able to perform push and pop methods other threads has to wait until t2 release the lock ,i.e if t2 executes push other thread can not execute pop because t2 have the lock
+    *-For synchronized block we need to define the lock object
+    *-Marking method as synchronized means inside it will use "this" as the lock object.
+	   *-Synchronized method can have synchronized block in it
+
+	 3.yeild : It is used to tell the jvm to make the thread state from running to Ready to run state.When we use this method the jvm will not change the state ,it is dependent on the jvm decision to change
+				the state of the Thread,basically it is an adviosiory method.
 				
 				
 
