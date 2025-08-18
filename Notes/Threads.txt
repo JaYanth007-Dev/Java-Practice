@@ -11,7 +11,7 @@ Java Threads:
 
 			Managed by the Java Virtual Machine (JVM) and the underlying OS.
 	-Whenever application starts running ,a user thread is created to run the main method () so it is called the main thread.
-	-If all user threads are completed its execution the program will stop execution and it will check for the demon thread had execute its task or not .
+	-If all user threads are completed its execution the program will stop execution and it will not check for the demon thread had execute its task or not .
 	  The prioroty for the user threads is high ,the main thread is an User thread.
 	*- Sleep method - it will not release the lock
 	*- wait method - it will release the lock .If it have multiple lock objects then on which object the wait() method was called it will release the lock only for the particular object
