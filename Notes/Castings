@@ -1,0 +1,8 @@
+| Concept         | Type                    | Safe/Unsafe | Example                      |
+| --------------- | ----------------------- | ----------- | ---------------------------- |
+| **Boxing**      | Primitive → Wrapper     | Safe        | `int x = 5; Integer y = x;`  |
+| **Unboxing**    | Wrapper → Primitive     | Safe        | `Integer i = 10; int j = i;` |
+| **Widening**    | Small → Large primitive | Safe        | `int → double`               |
+| **Narrowing**   | Large → Small primitive | Risky       | `double → int`               |
+| **Upcasting**   | Child → Parent object   | Safe        | `Dog → Animal`               |
+| **Downcasting** | Parent → Child object   | Risky       | `Animal → Dog`               |
