@@ -66,3 +66,14 @@
 			-The Above example we can written as 
 
 			void main() in that file it will work
+
+
+
+ ### 3. Created New IO class in java.lang package
+ 		-Created new class for input and output operations
+			Ex:
+				void main(){
+					IO.println("Hello world");
+				}
+
+ 		
