@@ -57,5 +57,12 @@
 		-The compiler will throw exception that no main method was found.
 		
 		
-			
-	
+### 2. Compact Source Files:
+	- We can write the main method without a class and class name
+		ex : class Example{
+				void main()
+			}
+
+			-The Above example we can written as 
+
+			void main() in that file it will work
