@@ -1,7 +1,8 @@
 
-**Java 25 features: (LTS version) in 2025**
+## ***Java 25 features: (LTS version) in 2025***
 
-1.Instance main method :
+### 1. Instance main method :
+
 	We can write the main method without public static and string [] args.
 	It was introduced as a preview feature in the java 24,now it came as a feature in java 25
 	
